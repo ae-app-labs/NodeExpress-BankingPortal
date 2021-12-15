@@ -2,6 +2,7 @@ const { accounts, users, writeJSON } = require('./data')
 const path = require('path')
 const express = require('express')
 const app = express()
+const port = process.env.PORT || 3000
 
 const accountRoutes = require('./routes/accounts')
 const servicesRoutes = require('./routes/services')
@@ -18,4 +19,4 @@ app.use('/services', servicesRoutes)
 
 app.get('/profile', (req, res) =>  res.render('profile', { user: users[0] }))
 
-app.listen(3000, () => console.log('PS Project Running on port 3000!'))
+app.listen(port, () => console.log(`PS Project Running on port ${port}!`))
