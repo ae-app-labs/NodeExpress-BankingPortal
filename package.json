@@ -1,5 +1,5 @@
 {
-  "name": "nodeexpress-bankingportal",
+  "name": "banking-portal",
   "version": "0.0.1",
   "description": "Build a Banking Portal with Node & Express",
   "main": "app.js",
